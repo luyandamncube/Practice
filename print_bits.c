@@ -30,3 +30,11 @@ int     main(int argc, char **argv)
     printf("\n");
     return (0);
 }
+
+
+int main(void)
+{
+    int **a;
+    **a = 42;
+    Printf(“%i\n”,**a);     // prints “42”
+}
