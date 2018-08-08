@@ -22,9 +22,9 @@ int     do_op(int a, int b, int op)
     if (op == '-')
         return (b - a);  //REMEMBER THIS
     if (op == '/')
-        return (a / b);
+        return (b/ a);
     if (op == '%')
-        return (a % b);
+        return (b % a);
     if (op == '*')
         return (a * b);
     return (0);
@@ -52,6 +52,7 @@ int     main(int argc, char **argv)
                 //Push answer to stack
                 stack[top++] = total; 
             }
+            else
             //Push to stack if operand  
             stack[top++] = atoi(ptr);
         }
